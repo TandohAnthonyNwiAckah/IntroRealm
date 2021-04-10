@@ -1,7 +1,8 @@
-package com.tanacom.introrealm
+package com.tanacom.introrealm.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tanacom.introrealm.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
