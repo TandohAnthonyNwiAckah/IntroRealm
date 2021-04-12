@@ -15,7 +15,7 @@ It is essentially a noSQL database which means that with Realm, you can store an
 ```
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-    ext.realm_version = "6.0.2"
+    ext.realm_version = "10.4.0"
     ext.gradle_version = "4.1.3"
     ext.kotlin_version = "1.4.32"
 
@@ -93,3 +93,9 @@ class IntroRealmApp : Application() {
 />
 
 ```
+
+## Documentation
+
+* Check out more from the SDK
+[MongoDB Realm Android SDK](https://docs.mongodb.com/realm/sdk/android/)
+
