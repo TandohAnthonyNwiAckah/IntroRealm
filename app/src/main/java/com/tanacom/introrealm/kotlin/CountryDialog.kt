@@ -7,6 +7,8 @@ import android.os.Bundle
 import android.widget.EditText
 import androidx.fragment.app.DialogFragment
 import com.tanacom.introrealm.R
+import com.tanacom.introrealm.kotlin.Constants.ADD_COUNTRY
+import com.tanacom.introrealm.kotlin.Constants.CANCEL
 import java.util.*
 
 class CountryDialog : DialogFragment() {
@@ -21,13 +23,18 @@ class CountryDialog : DialogFragment() {
         val editText = dialogLay.findViewById<EditText>(R.id.et_country)
         builder.setView(dialogLay)
             .setPositiveButton(
-                "Add Country"
+                ADD_COUNTRY
             ) { _, i ->
                 val country = editText.text.toString()
                 listerner!!.onAddCountry(country)
             }
+
+//            .setNeutralButton("Sync") { _, _ ->
+//                listerner!!.onSync()
+//            }
+
             .setNegativeButton(
-                "Cancel"
+                CANCEL
             ) { _, i ->
                 Objects.requireNonNull(this@CountryDialog.dialog)!!.cancel()
                 listerner!!.onCancel(this@CountryDialog)
@@ -44,5 +51,6 @@ class CountryDialog : DialogFragment() {
             throw ClassCastException(activity.toString() + "must implement interface")
         }
     }
+
 
 }

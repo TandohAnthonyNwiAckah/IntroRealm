@@ -4,8 +4,11 @@ import androidx.fragment.app.DialogFragment
 
 interface CountryListener {
 
-    fun onAddCountry(task: String?)
+    fun onAddCountry(country: String?)
 
     fun onCancel(dialogFragment: DialogFragment?)
+
+    fun onSync()
+
 
 }

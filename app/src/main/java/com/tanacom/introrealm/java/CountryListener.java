@@ -4,7 +4,7 @@
 //
 //public interface CountryListener {
 //
-//    void onAddCountry(String task);
+//    void onAddCountry(String country);
 //
 //    void onCancel(DialogFragment dialogFragment);
 //

@@ -5,11 +5,11 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center_vertical"
     android:layout_margin="16dp"
-    app:cardBackgroundColor="#FF6200EE"
-    app:cardCornerRadius="5dp"
-    app:cardElevation="4dp"
-    app:cardMaxElevation="6dp"
-    app:contentPadding="5dp">
+    app:cardBackgroundColor="#FFF"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    app:cardMaxElevation="12dp"
+    app:contentPadding="8dp">
 
 
     <LinearLayout
@@ -20,15 +20,22 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <EditText
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_margin="8dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_country"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
+            android:background="@drawable/ic_box"
             android:hint="@string/enter_country_to_add"
             android:padding="8dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 

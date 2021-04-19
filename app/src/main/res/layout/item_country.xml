@@ -9,10 +9,9 @@
     app:cardCornerRadius="5dp"
     app:cardElevation="4dp"
     app:cardMaxElevation="6dp"
-    app:contentPadding="5dp"
-    >
+    app:contentPadding="5dp">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

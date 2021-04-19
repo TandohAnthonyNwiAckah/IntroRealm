@@ -1,6 +1,7 @@
 package com.tanacom.introrealm
 
 import android.app.Application
+import com.tanacom.introrealm.kotlin.Constants.REALM_NAME
 import io.realm.Realm
 import io.realm.RealmConfiguration
 
@@ -16,7 +17,7 @@ class IntroRealmApp : Application() {
         Realm.init(this)
 
         val config = RealmConfiguration.Builder()
-            .name("country.realm").build()
+            .name(REALM_NAME).build()
 
         Realm.setDefaultConfiguration(config)
 
