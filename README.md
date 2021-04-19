@@ -19,27 +19,12 @@ It is essentially a noSQL database which means that with Realm, you can store an
 
 
 
-- [x] Swipe to Delete Data .
-- [x] Get Data from server.
-- [x] Add Data Manually.
-- [ ] Update Data.
-- [ ] Sync Data to Server.
-
-
 
 ## ***Preview***
 
 | Home | Add Diaolog|
 |   :-------------:|:-------------: |
-| <img src="pics/s1.png" width="400" height="800">|<img src="pics/s1.png" width="400"  height="800">|
-
-
-
-
-| Home | Add Diaolog|
-|     ------------- | ------------- |
-| ![Main Page](pics/s1.png)| ![Main Page](pics/s2.png)|
-
+| <img src="pics/s1.png" width="400" height="800">|<img src="pics/s2.png" width="400"  height="800">|
 
 
 
