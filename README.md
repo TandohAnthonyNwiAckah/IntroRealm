@@ -8,13 +8,13 @@ It is essentially a noSQL database which means that with Realm, you can store an
 
 ## Features of this Project
 
-```
+
 - [x] Swipe to Delete Data .
 - [x] Get Data from server.
 - [x] Add Data Manually.
 - [ ] Update Data.
 - [ ] Sync Data to Server.
-```
+
 
 
 
