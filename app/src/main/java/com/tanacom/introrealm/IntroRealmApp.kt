@@ -2,6 +2,7 @@ package com.tanacom.introrealm
 
 import android.app.Application
 import io.realm.Realm
+import io.realm.RealmConfiguration
 
 //import com.tanacom.introrealm.java.IntroRealmModel
 //import io.realm.RealmQuery
@@ -13,6 +14,11 @@ class IntroRealmApp : Application() {
         super.onCreate()
 
         Realm.init(this)
+
+        val config = RealmConfiguration.Builder()
+            .name("country.realm").build()
+
+        Realm.setDefaultConfiguration(config)
 
 
 //        TUTORIALS
@@ -44,6 +50,22 @@ class IntroRealmApp : Application() {
 //        val results: RealmResults<IntroRealmModel> = user.findAll()
 //        results[0]!!.age
 //        results.size
+
+
+//
+//        executeTransaction()
+//       is equivalent to
+//
+//        try {
+//            realm.beginTransaction();
+//            // body of executeTransaction
+//            realm.commitTransaction();
+//        } catch(Exception e) {
+//            if(realm.isInTransaction()) {
+//                realm.cancelTransaction();
+//            }
+//            throw new RuntimeException(e);
+//        }
 
 
     }
